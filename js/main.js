@@ -1,12 +1,4 @@
 $(document).ready(function () {
-    $("#self-pickup").click(function () {
-        $(".main").hide();
-        $(".stores").fadeIn(1000);
-    });
-    $("#delivery").click(function () {
-        $(".main").hide();
-        $(".delivery").fadeIn(1000);
-    });
     $(".failure-text").hide();
     $(".blank-text").hide();
     $(".main-social-items").hide();
@@ -27,7 +19,6 @@ $(document).ready(function () {
         } else {
             $(".delivery").hide();
             $(".main-social-items").fadeIn(1000);
-
         }
     });
 });
