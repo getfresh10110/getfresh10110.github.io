@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Now</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+
+    <!-- Start selection section -->
+    <div class="main">
+        <section class="selection">
+            <div class="wrapper">
+                <div class="getfresh-logo">
+                    <img src="images/logo.png" alt="logo" />
+                </div>
+                <div class="container">
+                    <div class="main-header">
+                        <h2>We offer delivery and self pick-up options. How would you like to order?</h2>
+                    </div>
+                    <div class="featured-block-section flex">
+                        <div class="featured-item-section">
+                            <span>
+                                <a id="delivery" class="featured-item-box">
+                                    <img src="images/svg/scooter.svg" alt="scooter">
+                                    <h2>Delivery</h2>
+                                </a>
+                            </span>
+                        </div>
+                        <div class="featured-item-section">
+                            <span><a id="self-pickup" class="featured-item-box">
+                                    <img src="images/svg/shop.svg" alt="scooter">
+                                    <h2>Self Pick-Up</h2>
+                                </a>
+                            </span>
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- End stores section-->
+    <!-- Start Delivery Section -->
+    <section class="delivery">
+        <div class="wrapper">
+            <div class="container">
+                <div class="detect-form">
+                    <h2 class="custom-delivery-title">Enter your zipcode to begin ordering!</h2>
+                    <form>
+                        <input type="number" name="zipcOde" id="zipcode"
+                            placeholder="Enter the zipcode you wish to order to" required="Enter the zipcode">
+                        <input type="button" value="Order Now!" id="button">
+                    </form>
+                    <p class="blank-text">Please enter a zipcode</p>
+                    <p class="failure-text">Enter a valid zipcode</p>
+                </div>
+                <!-- <h1 class="custom-seprator">OR</h1>
+                <h2 class="custom-delivery-title">Choose your location... </h2>
+                <div class="stores-block-section flex">
+                    <a href="http://MVL.ordernow.getfresh.co.th" class="store-item-section flex">
+                        <span class="logo-icon">
+                            <img src="images/logo-icon.png" alt="logo-icon">
+                        </span>
+                        <span class="store-location">
+                            <h2>getfresh (Mercury Ville)</h2>
+                            <p>540 Mercury Tower 1st Fl., Ploenchit Road, Lumpini, Pathumwan, Bangkok 10330</p>
+                        </span>
+                    </a>
+                    <a href="http://EMP.ordernow.getfresh.co.th" class="store-item-section flex">
+                        <span class="logo-icon">
+                            <img src="images/logo-icon.png" alt="logo-icon">
+                        </span>
+                        <span class="store-location">
+                            <h2>getfresh (Empire Tower)</h2>
+                            <p>1 Empire Tower 2nd Fl., Room 202 South Sathorn Rd., Yannawa, Sathorn, Bangkok 10120
+                            </p>
+                        </span>
+                    </a>
+                    <a href="http://XCH.ordernow.getfresh.co.th" class="store-item-section flex">
+                        <span class="logo-icon">
+                            <img src="images/logo-icon.png" alt="logo-icon">
+                        </span>
+                        <span class="store-location">
+                            <h2>getfresh (Exchange Tower)</h2>
+                            <p>CRC Tower Retail Center 87/2, Room 201, 2nd Floor, Wireless Road, Lumpini, Pathumwan,
+                                Bangkok 10330</p>
+                        </span>
+                    </a>
+                    <a href="http://QHL.ordernow.getfresh.co.th" class="store-item-section flex">
+                        <span class="logo-icon">
+                            <img src="images/logo-icon.png" alt="logo-icon">
+                        </span>
+                        <span class="store-location">
+                            <h2>getfresh (Q House Lumpini)</h2>
+                            <p>1 Q House Lumpini Building, G Floor, Room G03, South Sathorn Rd., Tungmahamek, Sathorn, Bangkok 10120</p>
+                        </span>
+                    </a>
+                    <a href="http://SNG.ordernow.getfresh.co.th " class="store-item-section flex">
+                        <span class="logo-icon">
+                            <img src="images/logo-icon.png" alt="logo-icon">
+                        </span>
+                        <span class="store-location">
+                            <h2>getfresh (Singha Complex)</h2>
+                            <p>1788 Singha Complex G Floor, Room G02-G03, New Petchburi Road, Bangkapi, Huay Khwang,
+                                Bangkok 10310</p>
+                        </span>
+                    </a>
+                    <a href="http://WZD.ordernow.getfresh.co.th" class="store-item-section flex">
+                        <span class="logo-icon">
+                            <img src="images/logo-icon.png" alt="logo-icon">-
+                        </span>
+                        <span class="store-location">
+                            <h2>getfresh (Whizdom 101)</h2>
+                            <p>Whizdom 1O1 Building, Room 205, 2nd Floor, Sukhumvit Road, Bang Chak, Phra Khanong,
+                                Bangkok 10260</p>
+                        </span>
+                    </a>
+                    <a href="http://NLC.ordernow.getfresh.co.th" class="store-item-section flex">
+                        <span class="logo-icon">
+                            <img src="images/logo-icon.png" alt="logo-icon">
+                        </span>
+                        <span class="store-location">
+                            <h2>getfresh (Market Place Nanglinchee)</h2>
+                            <p>Market Place Nanglinchee 27/1, room NLC02LS101 1st Floor., Nanglinchee Road, Soi
+                                Nanglinchee 3, Chong Nonsi, Yanawa, Bangkok 10120</p>
+                        </span>
+                    </a>
+                    <a href="http://ASP.ordernow.getfresh.co.th" class="store-item-section flex">
+                        <span class="logo-icon">
+                            <img src="images/logo-icon.png" alt="logo-icon">
+                        </span>
+                        <span class="store-location">
+                            <h2>getfresh (All Season Place - CRC Tower)</h2>
+                            <p>CRC Tower Retail Center 87/2, Room 201, 2nd Floor, Wireless Road, Lumpini, Pathumwan, Bangkok 10330</p>
+                        </span>
+                    </a>
+                    <a href="http://SYM.ordernow.getfresh.co.th" class="store-item-section flex">
+                        <span class="logo-icon">
+                            <img src="images/logo-icon.png" alt="logo-icon">
+                        </span>
+                        <span class="store-location">
+                            <h2>getfresh (Samyan Mitrtown)</h2>
+                            <p>Samyan Mitrtown 944/1, Room GU017, G Floor, Rama 4 Road, Wangmai, Pathumwan, Bangkok
+                                10330</p>
+                        </span>
+                    </a>
+                    
+                    
+                </div> -->
+            </div>
+        </div>
+    </section>
+    <section class="stores">
+        <div class="wrapper">
+            <div class="container">
+                <h2 class="custom-delivery-title">Choose your location... </h2>
+                <div class="stores-block-section flex">
+                    <a href="http://MVL.ordernow.getfresh.co.th" class="store-item-section flex">
+                        <span class="logo-icon">
+                            <img src="images/logo-icon.png" alt="logo-icon">
+                        </span>
+                        <span class="store-location">
+                            <h2>getfresh (Mercury Ville)</h2>
+                            <p>540 Mercury Tower 1st Fl., Ploenchit Road, Lumpini, Pathumwan, Bangkok 10330</p>
+                        </span>
+                    </a>
+                    <a href="http://EMP.ordernow.getfresh.co.th" class="store-item-section flex">
+                        <span class="logo-icon">
+                            <img src="images/logo-icon.png" alt="logo-icon">
+                        </span>
+                        <span class="store-location">
+                            <h2>getfresh (Empire Tower)</h2>
+                            <p>1 Empire Tower 2nd Fl., Room 202 South Sathorn Rd., Yannawa, Sathorn, Bangkok 10120
+                            </p>
+                        </span>
+                    </a>
+                    <a href="http://XCH.ordernow.getfresh.co.th" class="store-item-section flex">
+                        <span class="logo-icon">
+                            <img src="images/logo-icon.png" alt="logo-icon">
+                        </span>
+                        <span class="store-location">
+                            <h2>getfresh (Exchange Tower)</h2>
+                            <p>CRC Tower Retail Center 87/2, Room 201, 2nd Floor, Wireless Road, Lumpini, Pathumwan,
+                                Bangkok 10330</p>
+                        </span>
+                    </a>
+                    <a href="http://QHL.ordernow.getfresh.co.th" class="store-item-section flex">
+                        <span class="logo-icon">
+                            <img src="images/logo-icon.png" alt="logo-icon">
+                        </span>
+                        <span class="store-location">
+                            <h2>getfresh (Q House Lumpini)</h2>
+                            <p>1 Q House Lumpini Building, G Floor, Room G03, South Sathorn Rd., Tungmahamek, Sathorn, Bangkok 10120</p>
+                        </span>
+                    </a>
+                    <a href="http://SNG.ordernow.getfresh.co.th " class="store-item-section flex">
+                        <span class="logo-icon">
+                            <img src="images/logo-icon.png" alt="logo-icon">
+                        </span>
+                        <span class="store-location">
+                            <h2>getfresh (Singha Complex)</h2>
+                            <p>1788 Singha Complex G Floor, Room G02-G03, New Petchburi Road, Bangkapi, Huay Khwang,
+                                Bangkok 10310</p>
+                        </span>
+                    </a>
+                    <a href="http://WZD.ordernow.getfresh.co.th" class="store-item-section flex">
+                        <span class="logo-icon">
+                            <img src="images/logo-icon.png" alt="logo-icon">-
+                        </span>
+                        <span class="store-location">
+                            <h2>getfresh (Whizdom 101)</h2>
+                            <p>Whizdom 1O1 Building, Room 205, 2nd Floor, Sukhumvit Road, Bang Chak, Phra Khanong,
+                                Bangkok 10260</p>
+                        </span>
+                    </a>
+                    <a href="http://NLC.ordernow.getfresh.co.th" class="store-item-section flex">
+                        <span class="logo-icon">
+                            <img src="images/logo-icon.png" alt="logo-icon">
+                        </span>
+                        <span class="store-location">
+                            <h2>getfresh (Market Place Nanglinchee)</h2>
+                            <p>Market Place Nanglinchee 27/1, room NLC02LS101 1st Floor., Nanglinchee Road, Soi
+                                Nanglinchee 3, Chong Nonsi, Yanawa, Bangkok 10120</p>
+                        </span>
+                    </a>
+                    <a href="http://ASP.ordernow.getfresh.co.th" class="store-item-section flex">
+                        <span class="logo-icon">
+                            <img src="images/logo-icon.png" alt="logo-icon">
+                        </span>
+                        <span class="store-location">
+                            <h2>getfresh (All Season Place - CRC Tower)</h2>
+                            <p>CRC Tower Retail Center 87/2, Room 201, 2nd Floor, Wireless Road, Lumpini, Pathumwan, Bangkok 10330</p>
+                        </span>
+                    </a>
+                    <a href="http://SYM.ordernow.getfresh.co.th" class="store-item-section flex">
+                        <span class="logo-icon">
+                            <img src="images/logo-icon.png" alt="logo-icon">
+                        </span>
+                        <span class="store-location">
+                            <h2>getfresh (Samyan Mitrtown)</h2>
+                            <p>Samyan Mitrtown 944/1, Room GU017, G Floor, Rama 4 Road, Wangmai, Pathumwan, Bangkok
+                                10330</p>
+                        </span>
+                    </a>
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Delivery Section -->
+    <!-- Start Social Icons Section -->
+    <div class="main-social-items">
+
+        <section class="social-deliver">
+            <div class="wrapper">
+                <div class="container">
+                    <div class="social-delivery-section">
+                        <div class="social-delivery-heading">
+                            <h1>Hi! Thanks for ordering with us. </h1>
+                            <h2>Please contact us using one of the following methods so that we can take your order!
+                            </h2>
+                        </div>
+                        <div class="social-delivery-icons">
+                            <ul class="flex">
+                                <li><a href="#"><img src="images/svg/line.svg" alt="Line Icon" /></a></li>
+                                <li><a href="#"><img src="images/svg/facebook.svg" alt="Line Icon" /></a></li>
+                                <li><a href="#"><img src="images/svg/whatsapp.svg" alt="Line Icon" /></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+    <!-- End Social Icons Section -->
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
