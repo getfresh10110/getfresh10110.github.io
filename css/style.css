@@ -436,7 +436,9 @@ p.blank-text {
 .social-delivery-icons ul li a img {
     width: 54px;
 }
- 
+.delivery-banner-section img{
+    width: 100%;
+}
 /* === Media Query === */
 @media only screen and (max-width: 1024px) {
     .main-header {
