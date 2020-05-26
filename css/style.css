@@ -179,10 +179,39 @@ body {
     width: 50%;
     text-align: center;
 }
-
+.header-bg-section {
+    background: #ffffff;
+}
+.header-section {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-justify-content: center;
+    -ms-flex-pack: space-between;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+.logo-section img {
+    width: 250px;
+}
+.address-section p {
+    color: #732a83;
+    line-height: 1.5;
+}
+.address-section a {
+    color: #732a83;
+    text-decoration: none;
+}
 .featured-item-box {
-    width: 280px;
-    height: 280px;
+    width: 250px;
+    height: 250px;
     border-radius: 50%;
     text-align: center;
     background: #732a83;
@@ -204,8 +233,8 @@ body {
 .featured-item-box::after {
     content: '';
     border: 3px solid #732a83;
-    width: 280px;
-    height: 280px;
+    width: 250px;
+    height: 250px;
     border-radius: 50%;
     padding: 10px;
     position: absolute;
@@ -292,9 +321,9 @@ span.store-location p {
 }
 
 .main {
-    height: 100%;
+    margin: 0 auto;
     width: 100%;
-    display: table;
+    
 
 }
 
@@ -326,17 +355,15 @@ span.store-location p {
     position: absolute;
     top: 20px;
     left: 30px;
-    display: none;
+     
 }
 .getfresh-logo img {
     width: 250px;
 }
 
-.selection
- {
-    display: table-cell;
-    height: 100%;
-    vertical-align: middle;
+.main {
+    margin: 60px auto 0;
+    width: 100%;
 }
 
 #self-pickup h2 {
@@ -456,8 +483,11 @@ p.blank-text {
 }
 
 @media only screen and (max-width: 768px) {
-    .getfresh-logo{
-        display: block;
+    .logo-section img {
+        width: 200px;
+    }
+    .address-section p {
+        font-size: 16px;
     }
     .main-header {
         width: 80%;
@@ -514,6 +544,15 @@ p.blank-text {
     }
 }
 @media only screen and (max-width: 575px) {
+    .logo-section {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .address-section {
+        width: 100%;
+        text-align: center;
+    }
     .main-header {
         margin: 0 auto 40px;
     }
@@ -668,5 +707,11 @@ p.blank-text {
 
     .featured-item-box img {
         width: 50px;
+    }
+}
+@media only screen and (max-width: 350px ){
+    .address-section a {
+     
+        display: block;
     }
 }
