@@ -1,4 +1,10 @@
 $(document).ready(function () {
+    var currul = window.location.href;
+    var spliturl = currul.split('/');
+    if($.inArray( 'th' , spliturl  ) ){
+        $('#language').val('th').prop('selected',true);
+    }
+
     $(".failure-text").hide();
     $(".blank-text").hide();
     $(".main-social-items").hide();
@@ -23,13 +29,16 @@ $(document).ready(function () {
     });
     $(document).on("change",'#language',function(){
         var val = $(this).val(),
-            currul = '';
-        if(val === 'en' ){
+            currul = window.location.href;
+            var spliturl = currul.split('/');
+
+        if(val === 'en' && $.inArray( 'en' , spliturl  ) ){
            window.location.href = "/";
         }else{
             window.location.href = "/th";
         }   
     });
-     
+    
+
     
 });
