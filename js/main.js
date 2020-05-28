@@ -1,9 +1,11 @@
 $(document).ready(function () {
     var currul = window.location.href;
     var spliturl = currul.split('/');
-    if($.inArray( 'th' , spliturl  ) ){
-        $('#language').val('th').prop('selected',true);
-    }
+    $.each(spliturl,function(i,item){
+        if(item === 'th'){
+            $('#language').val('th').prop('selected',true);
+        }
+    })
 
     $(".failure-text").hide();
     $(".blank-text").hide();
