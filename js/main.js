@@ -6,7 +6,6 @@ $(document).ready(function () {
             $('#language').val('th').prop('selected',true);
         }
     })
-
     $(".failure-text").hide();
     $(".blank-text").hide();
     $(".main-social-items").hide();
@@ -33,14 +32,24 @@ $(document).ready(function () {
         var val = $(this).val(),
             currul = window.location.href;
             var spliturl = currul.split('/');
-
         if(val === 'en' && $.inArray( 'en' , spliturl  ) ){
-           window.location.href = "/";
-        }else{
-            window.location.href = "/th";
+            if( $.inArray( 'stores.html' , spliturl  ) ){
+                window.location.href = "/stores.html";
+            }else if( $.inArray( 'delivery.html' , spliturl  ) ){
+                window.location.href = "/delivery.html";
+            }else{
+                window.location.href = "/";
+            }
+        }
+        else{
+            if( $.inArray( 'stores.html' , spliturl  ) ){
+                window.location.href = "/th/stores.html";
+            }else if( $.inArray( 'delivery.html' , spliturl  ) ){
+                window.location.href = "/th/delivery.html";
+            }else{
+                window.location.href = "/th";
+            }
+            
         }   
     });
-    
-
-    
 });
