@@ -34,10 +34,10 @@ $(document).ready(function () {
             var spliturl = currul.split('/');
             console.log(currul.indexOf("/th"));
         if(val === 'en' && currul.indexOf("/th") == 0 ){
-            if( currul.indexOf("stores.html") > 0  ) ){
+            if( currul.indexOf("stores.html") > 0  ){
                 window.location.href = "/stores.html";
             }
-            else if( currul.indexOf("delivery.html") > 0   ) ){
+            else if( currul.indexOf("delivery.html") > 0 ){
                 window.location.href = "/delivery.html";
             }
             else{
@@ -45,10 +45,10 @@ $(document).ready(function () {
             }
         }
         else {
-            if( $.inArray( currul.indexOf("stores.html") > 0  ) ){
+            if( $.inArray( currul.indexOf("stores.html") > 0 ){
                 window.location.href = "/th/stores.html";
             }
-            else if( $.inArray( currul.indexOf("delivery.html") > 0  ) ){
+            else if( $.inArray( currul.indexOf("delivery.html") > 0 ){
                 window.location.href = "/th/delivery.html";
             }
             else{
