@@ -32,13 +32,12 @@ $(document).ready(function () {
         var val = $(this).val(),
             currul = window.location.href;
             var spliturl = currul.split('/');
-            console.log(currul.indexOf("/th"));
-        if(val === 'en' && currul.indexOf("/th") == 0 ){
+        if(val === 'en' && $.inArray( 'en' , spliturl  ) ){
             window.location.href = "/";
-            // if( currul.indexOf("stores.html") > 0  ){
+            // if( $.inArray( 'stores.html' , spliturl  ) ){
             //     window.location.href = "/stores.html";
             // }
-            // else if( currul.indexOf("delivery.html") > 0 ){
+            // else if( $.inArray( 'delivery.html' , spliturl  ) ){
             //     window.location.href = "/delivery.html";
             // }
             // else{
@@ -47,10 +46,10 @@ $(document).ready(function () {
         }
         else {
             window.location.href = "/th";
-            // if( $.inArray( currul.indexOf("stores.html") > 0 )){
+            // if( $.inArray( 'stores.html' , spliturl  ) ){
             //     window.location.href = "/th/stores.html";
             // }
-            // else if( $.inArray( currul.indexOf("delivery.html") > 0 )){
+            // else if( $.inArray( 'delivery.html' , spliturl  ) ){
             //     window.location.href = "/th/delivery.html";
             // }
             // else{
