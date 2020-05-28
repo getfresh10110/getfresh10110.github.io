@@ -34,26 +34,28 @@ $(document).ready(function () {
             var spliturl = currul.split('/');
             console.log(currul.indexOf("/th"));
         if(val === 'en' && currul.indexOf("/th") == 0 ){
-            if( currul.indexOf("stores.html") > 0  ){
-                window.location.href = "/stores.html";
-            }
-            else if( currul.indexOf("delivery.html") > 0 ){
-                window.location.href = "/delivery.html";
-            }
-            else{
-                window.location.href = "/";
-            }
+            window.location.href = "/";
+            // if( currul.indexOf("stores.html") > 0  ){
+            //     window.location.href = "/stores.html";
+            // }
+            // else if( currul.indexOf("delivery.html") > 0 ){
+            //     window.location.href = "/delivery.html";
+            // }
+            // else{
+            //     window.location.href = "/";
+            // }
         }
         else {
-            if( $.inArray( currul.indexOf("stores.html") > 0 )){
-                window.location.href = "/th/stores.html";
-            }
-            else if( $.inArray( currul.indexOf("delivery.html") > 0 )){
-                window.location.href = "/th/delivery.html";
-            }
-            else{
-                window.location.href = "/th";
-            }
+            window.location.href = "/th";
+            // if( $.inArray( currul.indexOf("stores.html") > 0 )){
+            //     window.location.href = "/th/stores.html";
+            // }
+            // else if( $.inArray( currul.indexOf("delivery.html") > 0 )){
+            //     window.location.href = "/th/delivery.html";
+            // }
+            // else{
+            //     window.location.href = "/th";
+            // }
             
         }   
     });
