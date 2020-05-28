@@ -45,10 +45,10 @@ $(document).ready(function () {
             }
         }
         else {
-            if( $.inArray( currul.indexOf("stores.html") > 0 ){
+            if( $.inArray( currul.indexOf("stores.html") > 0 )){
                 window.location.href = "/th/stores.html";
             }
-            else if( $.inArray( currul.indexOf("delivery.html") > 0 ){
+            else if( $.inArray( currul.indexOf("delivery.html") > 0 )){
                 window.location.href = "/th/delivery.html";
             }
             else{
