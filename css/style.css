@@ -466,6 +466,12 @@ p.blank-text {
 .delivery-banner-section img{
     width: 100%;
 }
+.language-switcher form select {
+    outline: none;
+    padding: 5px 15px 5px 5px;
+    border-color: #5d5752;
+}
+ 
 /* === Media Query === */
 @media only screen and (max-width: 1024px) {
     .main-header {
@@ -542,8 +548,11 @@ p.blank-text {
     .main-footer {
         margin: 40px auto 0;
     }
-}
-@media only screen and (max-width: 575px) {
+    .language-switcher {
+        text-align: center;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
     .logo-section {
         width: 100%;
         text-align: center;
@@ -553,6 +562,9 @@ p.blank-text {
         width: 100%;
         text-align: center;
     }
+}
+@media only screen and (max-width: 575px) {
+
     .main-header {
         margin: 0 auto 40px;
     }
@@ -691,6 +703,7 @@ p.blank-text {
         font-size: 18px;
     }
 }
+
 
 @media only screen and (max-width: 380px) {
     .featured-item-box:after {
