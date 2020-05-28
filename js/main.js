@@ -21,4 +21,15 @@ $(document).ready(function () {
             $(".main-social-items").fadeIn(1000);
         }
     });
+    $(document).on("change",'#language',function(){
+        var val = $(this).val(),
+            currul = '';
+        if(val === 'en' ){
+           window.location.href = "/";
+        }else{
+            window.location.href = "/th";
+        }   
+    });
+     
+    
 });
