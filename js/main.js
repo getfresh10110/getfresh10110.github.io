@@ -33,7 +33,7 @@ $(document).ready(function () {
             currul = window.location.href;
             var spliturl = currul.split('/');
             console.log(currul.indexOf("/th"));
-        if(val === 'en' && currul.indexOf("/th") == 0  ) ){
+        if(val === 'en' && currul.indexOf("/th") == 0 ){
             if( currul.indexOf("stores.html") > 0  ) ){
                 window.location.href = "/stores.html";
             }
