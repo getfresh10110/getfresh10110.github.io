@@ -471,7 +471,9 @@ p.blank-text {
     padding: 5px 15px 5px 5px;
     border-color: #5d5752;
 }
- 
+ .language-switcher-flags li{
+    margin-right: 20px;
+ }
 /* === Media Query === */
 @media only screen and (max-width: 1024px) {
     .main-header {
