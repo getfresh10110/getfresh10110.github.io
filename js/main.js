@@ -28,34 +28,16 @@ $(document).ready(function () {
             $(".main-social-items").fadeIn(1000);
         }
     });
-    $(document).on("change",'#language',function(){
-        var val = $(this).val(),
+    $(document).on("click",'.language-switcher-flags li',function(){
+        var val = $(this).attr("data-language"),
             currul = window.location.href;
+           
             var spliturl = currul.split('/');
         if(val === 'en' && $.inArray( 'en' , spliturl  ) ){
             window.location.href = "/";
-            // if( $.inArray( 'stores.html' , spliturl  ) ){
-            //     window.location.href = "/stores.html";
-            // }
-            // else if( $.inArray( 'delivery.html' , spliturl  ) ){
-            //     window.location.href = "/delivery.html";
-            // }
-            // else{
-            //     window.location.href = "/";
-            // }
         }
         else {
             window.location.href = "/th";
-            // if( $.inArray( 'stores.html' , spliturl  ) ){
-            //     window.location.href = "/th/stores.html";
-            // }
-            // else if( $.inArray( 'delivery.html' , spliturl  ) ){
-            //     window.location.href = "/th/delivery.html";
-            // }
-            // else{
-            //     window.location.href = "/th";
-            // }
-            
         }   
     });
 });
