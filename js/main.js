@@ -28,7 +28,7 @@ $(document).ready(function () {
         } else if (zip == "10330")  {
             window.location.href = "http://ASP.ordernow.getfresh.co.th";
         }
-        } else if (zip == "") {
+         else if (zip == "") {
             $(".blank-text").fadeIn(1000);
         } else {
             $(".delivery").hide();
