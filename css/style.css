@@ -480,7 +480,7 @@ p.blank-text {
  .social-icons {
     position: absolute;
     left: 50%;
-    top: 62%;
+    top: 57%;
     transform: translateX(-50%);
 }
 .social-icons ul li {
