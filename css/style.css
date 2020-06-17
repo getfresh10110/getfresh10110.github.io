@@ -488,6 +488,9 @@ p.blank-text {
     width: 80px;
     margin-right: 20px;
 }
+.address-section{
+    opacity: 0;
+}
 /* === Media Query === */
 @media only screen and (max-width: 1024px) {
     .main-header {
